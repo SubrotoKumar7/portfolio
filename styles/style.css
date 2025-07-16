@@ -197,3 +197,34 @@ main section{
 textarea{
     resize: none;
 }
+
+/* mobile view */
+@media screen and (max-width: 576px){
+    .banner, nav, nav ul, .skill-container, .resume-container, .footer-container, .about-items{
+        flex-direction: column;
+    }
+    .header{
+        background-image: none;
+    }
+    nav ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .banner{
+        margin: 10px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .footer-container, .about{
+        padding: 20px;
+    }
+    .social, .contact{
+        width: 100%;
+    }
+    .input-btn, textarea{
+        width: calc(100% - 60px);
+    }
+}
